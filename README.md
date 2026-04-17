@@ -16,6 +16,14 @@
   <img src="src/me5413_world/media/overview2526.png" alt="Project overview" width="88%" />
 </p>
 
+## Demo Video
+
+A **10× speed demonstration video** of the integrated system is available below:
+
+[![Watch the 10× speed demo](src/me5413_world/media/demo.png)](src/me5413_world/video/demo.mp4)
+
+> Click the image above to open the demo video.
+
 ## Overview
 
 This repository contains our final submission for **ME5413 Autonomous Mobile Robotics**.  
@@ -58,12 +66,12 @@ ME5413_Final_Project/
 │       ├── config/                 # Navigation / task parameters
 │       ├── launch/                 # world, mapping, navigation launch files
 │       ├── maps/                   # Saved occupancy map
-│       ├── media/                  # Images used in README / report
+│       ├── media/                  # Images used in README
 │       ├── models/                 # Custom Gazebo models
 │       ├── rviz/                   # RViz configurations
 │       ├── scripts/                # Python task scripts
+│       ├── video/                  # demo video (10x)
 │       └── worlds/                 # Gazebo world file
-├── AUTO_SCAN_FLOOR1.md
 ├── LICENSE
 └── README.md
 ```
@@ -239,11 +247,11 @@ The main custom scripts in this project are:
 - `floor1_auto_scan.py`  
   Performs first-floor sweeping, visual box detection, and counting.
 
-- `dynamic_obstacle_predictor.py`  
-  Provides predicted obstacle information to improve planning robustness.
-
 - `floor2_room_selector.py`  
   Handles ramp traversal, gap checking, upper-floor decision-making, and final room entry.
+
+- `dynamic_obstacle_predictor.py`  
+  Provides predicted obstacle information to improve planning robustness.
 
 ---
 
